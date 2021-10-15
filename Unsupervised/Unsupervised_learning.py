@@ -101,3 +101,12 @@ def PCA_algo():
 
     V = model.explained_variance_ratio_ #les % de variances pour chaque compostante
     print(np.cumsum(V))
+
+
+def main():
+    K_means_algo()
+    #Isolation_Forest_algo()
+    #PCA_algo()
+
+if __name__ == '__main__':
+    main()

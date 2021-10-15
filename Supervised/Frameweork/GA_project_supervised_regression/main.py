@@ -20,6 +20,7 @@
 '''
 
 # 1. Define a mesurable objectif :
+
 '''
 * Predict the transaction value (continues value)
 * Metrics :  - Root Mean Squared Error (RMSE): mean_squared_error(y_true, y_pred, squared=False) #give more importance to errors

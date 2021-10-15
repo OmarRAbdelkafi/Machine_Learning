@@ -28,7 +28,8 @@ def grad(X, y, theta):
     '''
     m = len(y) #nombre d'exemple dans le datasets
     Trans = X.T #transposé de la matrice X
-    return 1/m * Trans.dot(model(X,theta) - y)
+    mod = model(X,theta)
+    return 1/m * Trans.dot(mod - y)
 
 def gradient_descent(X, y, theta, learning_rate, n_iterations):
     cost_history = np.zeros(n_iterations) #tracer l'apprentissage
@@ -41,7 +42,7 @@ def gradient_descent(X, y, theta, learning_rate, n_iterations):
 
 def RegressionLineaire():
     '''
-    l'objectif est de trouver la fonction cout sous la forme linéaire y = ax+b, donc de trouver a et b à partir du datasets
+        The ojectif is to find the cost function to create the linear fonction y = ax + b, The regression find a and b from the dataset
     '''
     x, y = make_regression(n_samples=100, n_features=1, noise=10)
     #plt.scatter(x, y)
@@ -55,15 +56,16 @@ def RegressionLineaire():
     X = np.hstack((x,np.ones(x.shape)))
 
     #initialiser theta aléatoirement
-    theta = np.random.randn(2,1) #le vecteur qui définie les coeff de a et b
+    theta = np.random.randn(X.shape[1],1) #le vecteur qui définie les coeff de a et b
 
+    #To see the random line at the beginonf without learning
     '''
-    #pour voir la droite aléatoire au début par rapport au nuage de pt x,y
     droite_alea = model(X, theta)
     plt.scatter(x, y)
     plt.plot(x, droite_alea)
     plt.show()
     '''
+
     #param descente
     learning_rate = 0.01
     n_iterations = 500
@@ -71,7 +73,6 @@ def RegressionLineaire():
     theta_finale, cost_history = gradient_descent(X, y, theta, learning_rate, n_iterations)
 
     prediction = model(X, theta_finale)
-
 
     plt.scatter(x,y)
     plt.plot(x, prediction, c='r')
@@ -86,6 +87,54 @@ def RegressionLineaire():
     #coeff de determination R pour notre prediction
     print(coef_determination(y,prediction))
 
+def RegressionLineaireManyFeatures():
+    '''
+    l'objectif est de trouver la fonction cout sous la forme linéaire y = ax1+bx2+c,
+    avec plusieur feature, ici 2 features par exemple
+    '''
+    #generer un nuage de point avec 2 features
+    x, y = make_regression(n_samples=100, n_features=2, noise=10)
+    plt.scatter(x[:,0], y)
+    plt.show()
+
+    #redimensionner y
+    y = y.reshape(y.shape[0],1)
+
+    #changement ici car il faut ajouter le biais (les 1) seulement à la fin
+    X = np.hstack( ( x, np.ones((x.shape[0],1)) ) )
+
+    #initialiser theta aléatoirement pour a, b et c
+    theta = np.random.randn(X.shape[1],1)
+
+    #param descente
+    learning_rate = 0.01
+    n_iterations = 500
+
+    theta_finale, cost_history = gradient_descent(X, y, theta, learning_rate, n_iterations)
+
+    #création d'une courbe de prediction qui prédit notre model finale
+    prediction = model(X, theta_finale)
+
+    #coeff de determination R pour notre prediction
+    print(coef_determination(y,prediction))
+
+    plt.scatter(x[:,0],y)
+    plt.scatter(x[:,0],prediction, c = 'r')
+    plt.show()
+
+    '''
+    plt.plot(range(n_iterations), cost_history)
+    plt.show()
+    '''
+
+    #3d visualusation
+    from mpl_toolkits.mplot3d import Axes3D
+    fig = plt.figure()
+    ax = fig.add_subplot(111, projection='3d')
+
+    ax.scatter(x[:,0], x[:,1], y)
+    ax.scatter(x[:,0], x[:,1], prediction, c = 'r')
+    plt.show()
 
 def RegressionPolynomiale():
     '''
@@ -107,7 +156,7 @@ def RegressionPolynomiale():
 
     #initialiser theta aléatoirement
     #le changement qu'on fait est de faire passer theta de 2 param à 3 param (ou lignes ici)
-    theta = np.random.randn(3,1) #le vecteur qui définie les coeff de a, b et c
+    theta = np.random.randn(X.shape[1],1) #le vecteur qui définie les coeff de a, b et c
 
     '''
     #pour voir la droite aléatoire au début par rapport au nuage de pt x,y
@@ -126,66 +175,22 @@ def RegressionPolynomiale():
     #création d'une courbe de prediction qui prédit notre model finale
     prediction = model(X, theta_finale)
 
-
     plt.scatter(x[:,0],y)
     plt.scatter(x[:,0],prediction, c = 'r')
     plt.show()
 
-
-
     plt.plot(range(n_iterations), cost_history)
     plt.show()
-
 
     #coeff de determination R pour notre prediction
     print(coef_determination(y,prediction))
 
 
-def RegressionLineaireManyFeatures():
-    '''
-    l'objectif est de trouver la fonction cout sous la forme linéaire y = ax1+bx2+c,
-    avec plusieur feature, ici 2 features par exemple
-    '''
-    #generer un nuage de point avec 2 features
-    x, y = make_regression(n_samples=100, n_features=2, noise=10)
-    plt.scatter(x[:,0], y)
-    plt.show()
 
-    #redimensionner y
-    y = y.reshape(y.shape[0],1)
+def main():
+    RegressionLineaire()
+    #RegressionLineaireManyFeatures()
+    #RegressionPolynomiale()
 
-    #changement ici car il faut ajouter le biais (les 1) seulement à la fin
-    X = np.hstack( ( x, np.ones((x.shape[0],1)) ) )
-
-    #initialiser theta aléatoirement pour a, b et c
-    theta = np.random.randn(3,1)
-
-    #param descente
-    learning_rate = 0.01
-    n_iterations = 500
-
-    theta_finale, cost_history = gradient_descent(X, y, theta, learning_rate, n_iterations)
-
-    #création d'une courbe de prediction qui prédit notre model finale
-    prediction = model(X, theta_finale)
-
-    #coeff de determination R pour notre prediction
-    print(coef_determination(y,prediction))
-
-
-    plt.scatter(x[:,0],y)
-    plt.scatter(x[:,0],prediction, c = 'r')
-    plt.show()
-
-
-    plt.plot(range(n_iterations), cost_history)
-    plt.show()
-
-    #3d visualusation
-    from mpl_toolkits.mplot3d import Axes3D
-    fig = plt.figure()
-    ax = fig.add_subplot(111, projection='3d')
-
-    ax.scatter(x[:,0], x[:,1], y)
-    ax.scatter(x[:,0], x[:,1], prediction, c = 'r')
-    plt.show()
+if __name__ == '__main__':
+    main()
