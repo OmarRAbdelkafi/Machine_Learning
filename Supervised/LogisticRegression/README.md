@@ -1,3 +1,0 @@
-# LogisticRegression
-
-On construction...
