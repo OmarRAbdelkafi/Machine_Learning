@@ -68,9 +68,11 @@ def gradient_descent(X, y, W, b, learning_rate, n_iterations):
     return W, b, cost_history
 
 def artificial_neuron(X, y, learning_rate, n_iterations):
-    show_details = True
+    show_details = False
+
     W, b = initialization(X)
     weight, bias, cost_history = gradient_descent(X, y, W, b, learning_rate, n_iterations)
+
     if show_details:
         print("last loss cost:", cost_history[n_iterations])
         plt.plot(range(n_iterations+1), cost_history)
@@ -84,11 +86,13 @@ def train_classification():
         for two features we optimize Z = w1 * a1 + w2 * a2 + b
         We use sigmoid as an activaion function for our neuron (sigmoid = 1 / (1 + exp(-z)))
     '''
-    show_details = False
+    show_details = True
+
     N = 2
     X, y = make_blobs(n_samples=100, n_features=N, centers=2, random_state=0)
-    #redime y for (m,1)
+    #reshape y for (m,1)
     y = y.reshape(y.shape[0],1)
+
     if show_details:
         plt.scatter(X[:,0], X[:,1], c=y, cmap='summer')
         plt.show()
