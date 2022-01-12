@@ -2,6 +2,7 @@
 
 #Project description
 '''
+The objectif of this work is to implement a sinlgle neuron
 The dataset:
 *Presenting the initial data:
     - We use a dataset of 1000 pictures 64*64 = 4096 features so we try to optimize Z = sum(Wi * ai) + b
@@ -12,7 +13,7 @@ The dataset:
 '''
 * Predict the classification of cat or dog
 * Metrics :  - Accurancy
-* Objectif : Accurancy : 0.95
+* Objectif : Accurancy : 0.5 (since we use a linear model for a non linear problem)
 '''
 import numpy as np
 from sklearn.metrics import accuracy_score
@@ -58,7 +59,7 @@ def Train_Dog_Cat_classification():
 
     #param
     learning_rate = 0.01
-    n_iterations = 400
+    n_iterations = 4000
 
     Output_Neuron = AN.Artificial_Neuron(learning_rate, n_iterations)
     weight, bias, cost_history, accurancy_history = Output_Neuron.gradient_descent(X_train, y_train)
