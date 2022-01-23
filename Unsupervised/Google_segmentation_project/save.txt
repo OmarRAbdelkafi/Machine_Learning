@@ -1,0 +1,253 @@
+
+ clean_data_small.csv 
+
+
+Global information :
+The total transactions is 11016720000.0 $
+The total hits is 42532
+The global CRO on transaction is 1.2430632630410654
+Mean pageview or all the dataset : 3.9455049944506104
+
+Number of segments =  9
+
+################# Best Segment = 6
+Size =  70
+Market share on transaction =  93.16094082449223 %
+Market share on hits =  6.183579422552431 %
+==> CRO transaction:  100.0
+Segment mean pageview : 29.557142857142857
+Most of the people are from United States with [ 95.71428571428572 %]
+They use the channelGrouping Referral with [ 44.285714285714285 %]
+They use the browser Chrome with [ 94.28571428571428 %]
+--> 12.857142857142856 %  of the people spending money are doing it in month 8
+they connect between 0 and 23
+################# End best Segment
+
+*************Meet the criteria***************
+
+#################Segment = 0
+Size =  1655
+Market share on transaction =  0.0 %
+Market share on hits =  6.09423492899464 %
+==> CRO transaction:  0.0
+Segment mean pageview : 1.5045317220543806
+Most of the people are from Vietnam with [ 12.930513595166163 %]
+They use the channelGrouping Social with [ 97.94561933534743 %]
+They use the browser Chrome with [ 50.39274924471299 %]
+no one is spending money in this segment
+################# End Segment
+
+
+#################Segment = 1
+Size =  1190
+Market share on transaction =  0.0816032358088433 %
+Market share on hits =  9.223643374400451 %
+==> CRO transaction:  0.08403361344537816
+Segment mean pageview : 2.876470588235294
+Most of the people are from United States with [ 39.49579831932773 %]
+They use the channelGrouping Organic Search with [ 52.43697478991597 %]
+They use the browser Chrome with [ 89.74789915966387 %]
+--> 100.0 %  of the people spending money are doing it in month 4
+they connect between 14 and 14
+################# End Segment
+
+
+#################Segment = 4
+Size =  1426
+Market share on transaction =  0.0 %
+Market share on hits =  8.224395749083044 %
+==> CRO transaction:  0.0
+Segment mean pageview : 2.2061711079943898
+Most of the people are from India with [ 10.799438990182328 %]
+They use the channelGrouping Organic Search with [ 55.890603085554005 %]
+They use the browser Chrome with [ 76.36746143057503 %]
+no one is spending money in this segment
+################# End Segment
+
+
+#################Segment = 5
+Size =  69
+Market share on transaction =  0.0 %
+Market share on hits =  0.8276121508511239 %
+==> CRO transaction:  0.0
+Segment mean pageview : 4.231884057971015
+Most of the people are from United States with [ 66.66666666666666 %]
+They use the channelGrouping Organic Search with [ 49.275362318840585 %]
+They use the browser Chrome with [ 79.71014492753623 %]
+no one is spending money in this segment
+################# End Segment
+
+
+ clean_data_medium1.csv 
+
+
+Global information :
+The total transactions is 161558840000.0 $
+The total hits is 415969
+The global CRO on transaction is 1.278875125544024
+Mean pageview or all the dataset : 3.885425733735074
+
+Number of segments =  8
+
+################# Best Segment = 3
+Size =  1859
+Market share on transaction =  80.52665518024268 %
+Market share on hits =  22.558171402195835 %
+==> CRO transaction:  48.25174825174825
+Segment mean pageview : 37.29209252286175
+Most of the people are from United States with [ 81.11888111888112 %]
+They use the channelGrouping Referral with [ 38.40774610005379 %]
+They use the browser Chrome with [ 88.54222700376546 %]
+--> 11.259754738015609 %  of the people spending money are doing it in month 12
+they connect between 0 and 23
+################# End best Segment
+
+*************Meet the criteria***************
+
+#################Segment = 2
+Size =  16524
+Market share on transaction =  0.0 %
+Market share on hits =  6.525726676747547 %
+==> CRO transaction:  0.0
+Segment mean pageview : 1.5670539820866618
+Most of the people are from Vietnam with [ 12.460663277656742 %]
+They use the channelGrouping Social with [ 97.18591140159768 %]
+They use the browser Chrome with [ 50.46598886468168 %]
+no one is spending money in this segment
+################# End Segment
+
+
+#################Segment = 4
+Size =  15054
+Market share on transaction =  0.008040414254026584 %
+Market share on hits =  9.88727525368477 %
+==> CRO transaction:  0.0066427527567423945
+Segment mean pageview : 2.440148797661751
+Most of the people are from India with [ 10.542048624950178 %]
+They use the channelGrouping Organic Search with [ 56.323900624418755 %]
+They use the browser Chrome with [ 76.60422479075328 %]
+--> 100.0 %  of the people spending money are doing it in month 6
+they connect between 17 and 17
+################# End Segment
+
+
+ clean_data_medium2.csv 
+
+
+Global information :
+The total transactions is 743431230000.0 $
+The total hits is 2070544
+The global CRO on transaction is 1.2832823510802074
+Mean pageview or all the dataset : 3.8625595690310104
+
+Number of segments =  10
+
+################# Best Segment = 6
+Size =  2681
+Market share on transaction =  84.35524022847413 %
+Market share on hits =  5.665612515358283 %
+==> CRO transaction:  100.0
+Segment mean pageview : 33.28869824692279
+Most of the people are from United States with [ 94.36777321894816 %]
+They use the channelGrouping Referral with [ 51.62252890712421 %]
+They use the browser Chrome with [ 94.51697127937337 %]
+--> 11.600149198060425 %  of the people spending money are doing it in month 8
+they connect between 0 and 23
+################# End best Segment
+
+*************Meet the criteria***************
+
+#################Segment = 1
+Size =  74673
+Market share on transaction =  0.07008987233425747 %
+Market share on hits =  9.539956649073867 %
+==> CRO transaction:  0.024105098228275283
+Segment mean pageview : 2.379199978573246
+Most of the people are from India with [ 10.594190671326986 %]
+They use the channelGrouping Organic Search with [ 55.6841160794397 %]
+They use the browser Chrome with [ 76.7305451769716 %]
+--> 22.22222222222222 %  of the people spending money are doing it in month 5
+they connect between 3 and 23
+################# End Segment
+
+
+#################Segment = 2
+Size =  80725
+Market share on transaction =  0.0 %
+Market share on hits =  6.2338689735644355 %
+==> CRO transaction:  0.0
+Segment mean pageview : 1.5332424899349644
+Most of the people are from Vietnam with [ 12.789098792195727 %]
+They use the channelGrouping Social with [ 98.15051099411582 %]
+They use the browser Chrome with [ 50.325178073707036 %]
+no one is spending money in this segment
+################# End Segment
+
+
+#################Segment = 3
+Size =  37610
+Market share on transaction =  0.03738879788517897 %
+Market share on hits =  5.891108810051851 %
+==> CRO transaction:  0.029247540547726665
+Segment mean pageview : 2.794336612603031
+Most of the people are from India with [ 10.194097314544004 %]
+They use the channelGrouping Organic Search with [ 68.66790747141718 %]
+They use the browser Chrome with [ 77.77186918372773 %]
+--> 45.45454545454545 %  of the people spending money are doing it in month 12
+they connect between 0 and 23
+################# End Segment
+
+
+ clean_data_big.csv 
+
+
+Global information :
+The total transactions is 1055275430000.0 $
+The total hits is 2892181
+The global CRO on transaction is 1.2696851333670771
+Mean pageview or all the dataset : 3.855588238102969
+
+Number of segments =  9
+
+################# Best Segment = 8
+Size =  3601
+Market share on transaction =  83.55745475851741 %
+Market share on hits =  5.520954601389056 %
+==> CRO transaction:  100.0
+Segment mean pageview : 33.673979450152736
+Most of the people are from United States with [ 94.50152735351291 %]
+They use the channelGrouping Referral with [ 51.15245765065259 %]
+They use the browser Chrome with [ 94.39044709802833 %]
+--> 12.024437656206608 %  of the people spending money are doing it in month 8
+they connect between 0 and 23
+################# End best Segment
+
+*************Meet the criteria***************
+
+#################Segment = 1
+Size =  121151
+Market share on transaction =  0.023490549761023053 %
+Market share on hits =  6.991263686470521 %
+==> CRO transaction:  0.006603329729015856
+Segment mean pageview : 1.5898094113956962
+Most of the people are from Vietnam with [ 12.046124258157176 %]
+They use the channelGrouping Social with [ 94.91956318973843 %]
+They use the browser Chrome with [ 50.668999843170916 %]
+--> 87.5 %  of the people spending money are doing it in month 12
+they connect between 5 and 21
+################# End Segment
+
+
+#################Segment = 4
+Size =  130288
+Market share on transaction =  0.05957970612468443 %
+Market share on hits =  11.987112839756572 %
+==> CRO transaction:  0.01688566867247943
+Segment mean pageview : 2.3709474395186048
+Most of the people are from India with [ 12.037946702689426 %]
+They use the channelGrouping Organic Search with [ 61.98575463588358 %]
+They use the browser Chrome with [ 77.98262311187523 %]
+--> 31.818181818181817 %  of the people spending money are doing it in month 3
+they connect between 0 and 23
+################# End Segment
+

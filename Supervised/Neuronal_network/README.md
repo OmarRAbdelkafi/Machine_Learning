@@ -1,3 +1,0 @@
-# DEEP LEARNING
-
-On construction...
