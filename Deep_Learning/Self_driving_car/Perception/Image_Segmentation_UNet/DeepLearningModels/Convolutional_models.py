@@ -15,7 +15,7 @@ def Set_unet_model_V0(img_height, img_width, num_channels):
 
 def Fit_unet_model_V0(unet, processed_image_ds):
     #train model
-    EPOCHS = 1
+    EPOCHS = 30
     VAL_SUBSPLITS = 5
     BUFFER_SIZE = 500
     BATCH_SIZE = 32
